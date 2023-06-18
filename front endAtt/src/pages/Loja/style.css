@@ -1,0 +1,80 @@
+.titulo-loja {
+
+  text-align: center;
+
+}
+
+
+.product-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product-table th {
+  background-color: #242424;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #000000;
+}
+
+.product-table td {
+  background-color: #ffffff;
+  font-size: 20px;
+
+}
+
+/* txtFields*/
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(to bottom, #707070, #707070);
+}
+
+/*botões*/
+button {
+  padding: 10px 20px;
+  background-color: #242424;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #94d7b4;
+}
+
+/*titulos*/
+h1.titulo-loja {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

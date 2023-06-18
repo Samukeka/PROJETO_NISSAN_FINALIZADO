@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `estoque` ADD COLUMN `quantidade` INTEGER NOT NULL DEFAULT 1000;

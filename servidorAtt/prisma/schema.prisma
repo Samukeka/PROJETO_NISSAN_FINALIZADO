@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+ provider = "mysql"
+ url = env("DATABASE_URL")
+}
+//para criar a tabela(Migration): npx prisma migrate dev
+
+model User {
+  id         Int     @id @default(autoincrement())
+  name       String
+  email      String
+  password   String
+  created_at DateTime? @default(now())
+  updated_at DateTime? @default(now())
+  pedido     pedido[] @relation("UserToOrder")
+  @@map("users")
+}
+
+model estoque {
+  id       Int    @id @default(autoincrement())
+  nomeProduto String
+  preco       Float
+  quantidade Int @default(1000)
+}
+
+model pedido {
+  id                Int     @id @default(autoincrement())
+  productName       String
+  productPrice      Float
+  user              User    @relation("UserToOrder", fields: [userId], references: [id])
+  userId            Int     @default(1)
+}

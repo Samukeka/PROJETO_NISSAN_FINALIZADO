@@ -1,0 +1,119 @@
+.titulo-home{
+    text-align: center;
+}
+.texti{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+  justify-content: center;
+  font-size: 20px;
+    
+}
+
+.txtTitle{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.tableHome {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px
+}
+
+.tableHome th,
+.tableHome td {
+  border: 1px solid #000000;
+  padding: 8px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tableHome th {
+  background-color: #242424;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+}
+
+.tableHome tbody tr:nth-child(even) {
+  background-color: #000000;
+}
+
+.tableHome td {
+  background-color: #ffffff;
+  font-size: 20px;
+
+}
+
+.botao {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.botao.show-email {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.email {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.botao.show-email .email {
+  opacity: 1;
+}
+
+
+.checkout {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.checkout table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkout th,
+.checkout td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkout th {
+  background-color: #f2f2f2;
+}
+
+.checkout button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout button:hover {
+  background-color: #45a049;
+}
+
+.checkout button:active {
+  background-color: #3e8e41;
+}
